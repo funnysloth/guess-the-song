@@ -25,6 +25,7 @@ body {
   padding-top: 100px;
   font-size: 100px;
   font-family: "Great Vibes", cursive;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #7facff;
 }
 
 #categories-container, #song-wrapper {
@@ -143,7 +144,7 @@ body {
 
 .song-name {
   font-weight: bold;
-  text-shadow: 1px 1px 10px #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
 }
 
 .count {
