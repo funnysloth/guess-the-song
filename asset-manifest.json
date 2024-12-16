@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/guess-the-song/static/css/main.938df62d.css",
-    "main.js": "/guess-the-song/static/js/main.0a61d28f.js",
+    "main.css": "/guess-the-song/static/css/main.8332797f.css",
+    "main.js": "/guess-the-song/static/js/main.4f366b6e.js",
     "static/js/488.9c92ff38.chunk.js": "/guess-the-song/static/js/488.9c92ff38.chunk.js",
     "static/media/main-bg.jpg": "/guess-the-song/static/media/main-bg.ac7ba9af356f24772833.jpg",
     "index.html": "/guess-the-song/index.html",
-    "main.938df62d.css.map": "/guess-the-song/static/css/main.938df62d.css.map",
-    "main.0a61d28f.js.map": "/guess-the-song/static/js/main.0a61d28f.js.map",
+    "main.8332797f.css.map": "/guess-the-song/static/css/main.8332797f.css.map",
+    "main.4f366b6e.js.map": "/guess-the-song/static/js/main.4f366b6e.js.map",
     "488.9c92ff38.chunk.js.map": "/guess-the-song/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.938df62d.css",
-    "static/js/main.0a61d28f.js"
+    "static/css/main.8332797f.css",
+    "static/js/main.4f366b6e.js"
   ]
 }
