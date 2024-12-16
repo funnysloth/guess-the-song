@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url('img/main-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#app, #song-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#title {
+  text-align: center;
+  margin: 0;
+  padding-top: 100px;
+  font-size: 100px;
+  font-family: "Great Vibes", cursive;
+}
+
+#categories-container, #song-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  width: 90%;
+  height: calc(100% - 200px);
+  gap: 20px;
+}
+
+.category-wrapper {
+  flex: 0 0 calc(28.33% - 10px);
+  margin: 10px;
+  width: 20em;
+  height: calc(100vh / 10);
+}
+
+.category-btn {
+  font: 700 25px Arial;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-btn:hover {
+  background-color: #FF7F87;
+  transform: scale(1.1);
+}
+
+.category-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#teams-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+
+#team1, #team2 {
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  margin: 10px;
+}
+
+#team1 button, #team2 button {
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px 13px;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#team1 button:hover, #team2 button:hover {
+  transform: scale(1.1);
+}
+
+#team1 p, #team2 p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.score-management {
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+#song-wrapper button {
+  font: 25px Arial;
+  border-radius: 30px;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#song-wrapper button:hover {
+  background-color: #7facff;
+  transform: scale(1.1);
+}
+
+#answer {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap: 15px
+}
+
+#answer p {
+  max-width: 350px;
+  text-align: center;
+  margin: 0;
+}
+
+.song-name {
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #fff;
+}
+
+.count {
+  font-size: smaller;
+  color: #6c757d;
+}
+
+audio {
+  align-self: center;
+}
+
+.notes {
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
