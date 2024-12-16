@@ -76,7 +76,7 @@ function App() {
 
   const stopBackgroundMusic = () => {
     backgroundAudio.pause();
-    backgroundAudio.startTime = 0;
+    backgroundAudio.currentTime = 0;
   }
 
   const startGame = () => {
@@ -162,7 +162,7 @@ function App() {
         </div>
         </>
       ) : (
-        <button onClick={startGame}>Start Game</button>
+        <button id="start-game-btn" onClick={startGame}>Почати гру</button>
       )}
     </div>
   );

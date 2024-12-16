@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+#root {
+  height: 100vh;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -10,7 +14,6 @@ body {
 }
 
 #app, #song-wrapper {
-  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -31,7 +34,6 @@ body {
   align-content: center;
   margin: 0;
   width: 90%;
-  height: calc(100% - 200px);
   gap: 20px;
 }
 
@@ -160,4 +162,23 @@ audio {
 
   transform: translate(-50%, -50%);
   z-index: -1;
+}
+
+#start-game-btn{
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px dashed #7facff;
+  margin-top: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset 5px 3px 15px #7facff;
+}
+
+#start-game-btn:hover {
+  transform: scale(1.1);
+  background-color: #7facff;
+  border: 4px dotted #fff;
+  box-shadow: inset -1px -1px 5px #fff;
 }
