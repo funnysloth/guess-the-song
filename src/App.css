@@ -22,7 +22,7 @@ body {
 #title {
   text-align: center;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 20px;
   font-size: 100px;
   font-family: "Great Vibes", cursive;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #7facff;
@@ -182,4 +182,12 @@ audio {
   background-color: #7facff;
   border: 4px dotted #fff;
   box-shadow: inset -1px -1px 5px #fff;
+}
+
+.team-name {
+  max-height: 70px;
+  max-width: 150px;
+  overflow: auto;
+  outline: none;
+  scrollbar-width: none;
 }

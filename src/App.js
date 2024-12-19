@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 const initialCategories = {
@@ -104,25 +104,25 @@ function App() {
             {!showAnswer ? (
               <button onClick={handleShowAnswer}>Показати відповідь</button>
             ) : (
-              <div id="answer">
-                  <audio controls>
-                      <source
-                      src={`songs/${tracks[selectedCategory][currentTrackIndex]}-original.mp3`}
-                      type="audio/mpeg"
-                      />
-                      Ваш браузер не підтримує аудіо.
-                  </audio>
-                <p>
-                  Відповідь:{" "}
+                 <div id="answer">
+                    <audio controls>
+                        <source
+                        src={`songs/${tracks[selectedCategory][currentTrackIndex]}-original.mp3`}
+                        type="audio/mpeg"
+                        />
+                        Ваш браузер не підтримує аудіо.
+                    </audio>
+                  <p>
+                    Відповідь:{" "}
+                    </p>
+                    <p className="song-name">
+                    {tracks[selectedCategory][currentTrackIndex].replace(
+                      /\.mp3$/,
+                      ""
+                    )}
                   </p>
-                  <p className="song-name">
-                  {tracks[selectedCategory][currentTrackIndex].replace(
-                    /\.mp3$/,
-                    ""
-                  )}
-                </p>
-                <button onClick={handleBack}>Повернутися</button>
-              </div>
+                  <button onClick={handleBack}>Повернутися</button>
+                </div> 
             )}
             <img src="musical-notes-joypixels.gif" alt="notes" className='notes' />
           </div>
@@ -144,7 +144,7 @@ function App() {
         )}
         <div id="teams-container">
           <div id="team1">
-            <h3>Пряники</h3>
+            <h3 className="team-name" contentEditable>Команда 1</h3>
             <p>{team1Score}</p>
             <div className="score-management">
               <button onClick={() => decrementScore(1)}>-</button>
@@ -152,7 +152,7 @@ function App() {
             </div>
           </div>
           <div id="team2">
-            <h3>Різдвяники</h3>
+            <h3 className="team-name" contentEditable>Команда 2</h3>
             <p>{team2Score}</p>
             <div className="score-management">
               <button onClick={() => decrementScore(2)}>-</button>
