@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Modal from 'react-bootstrap/Modal';
+import { ModalHeader } from "react-bootstrap";
 
 const initialCategories = {
   Казу: 3,
@@ -101,7 +104,28 @@ function App() {
               />
               Ваш браузер не підтримує аудіо.
             </audio>
-            {!showAnswer ? (
+            <button className="generic-btn" onClick={handleShowAnswer}>Показати відповідь</button>
+            <Modal show={showAnswer} aria-labelledby="contained-modal-title-vcenter"centered>
+              <Modal.Header>
+                <Modal.Title>
+                  {tracks[selectedCategory][currentTrackIndex].replace(
+                      /\.mp3$/,
+                      ""
+                    )}
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body className="modal-body">
+                    <audio controls>
+                        <source
+                        src={`songs/${tracks[selectedCategory][currentTrackIndex]}-original.mp3`}
+                        type="audio/mpeg"
+                        />
+                        Ваш браузер не підтримує аудіо.
+                    </audio>
+                    <button className="generic-btn" onClick={handleBack}>До категорій</button>
+              </Modal.Body>
+            </Modal>
+            {/* {!showAnswer ? (
               <button onClick={handleShowAnswer}>Показати відповідь</button>
             ) : (
                  <div id="answer">
@@ -123,7 +147,7 @@ function App() {
                   </p>
                   <button onClick={handleBack}>Повернутися</button>
                 </div> 
-            )}
+            )} */}
             <img src="musical-notes-joypixels.gif" alt="notes" className='notes' />
           </div>
         ) : (
@@ -143,7 +167,7 @@ function App() {
           </div>
         )}
         <div id="teams-container">
-          <div id="team1">
+          <div class="team">
             <h3 className="team-name" contentEditable>Команда 1</h3>
             <p>{team1Score}</p>
             <div className="score-management">
@@ -151,7 +175,7 @@ function App() {
               <button onClick={() => incrementScore(1)}>+</button>
             </div>
           </div>
-          <div id="team2">
+          <div class="team">
             <h3 className="team-name" contentEditable>Команда 2</h3>
             <p>{team2Score}</p>
             <div className="score-management">
