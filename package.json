@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "https://funnysloth.github.io/guess-the-song/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
