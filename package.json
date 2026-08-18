@@ -11,7 +11,7 @@
     "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0",
     "react-scripts": "^5.0.1",
     "web-vitals": "^4.2.4",
-    "webpack": "^5.97.1"
+    "webpack": "^5.109.2"
   },
   "scripts": {
     "start": "react-scripts start",
